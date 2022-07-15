@@ -1,0 +1,316 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(img//qatar.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+
+/*------------MENU----------*/
+.titulo {
+    margin: 2rem;
+    padding: 2rem;
+    border: solid white 4px;
+    color: white;
+    text-align: center;
+}
+
+
+.nav {
+    margin: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+.nav__menu {
+    border: solid white;
+    padding: 40px;
+    text-align: center;
+}
+
+.nav__principal :hover {
+    background-color: gray;
+    list-style-type: none;
+
+}
+
+.nav__principal li {
+    display: inline-block;
+}
+
+.nav__principal a {
+    text-decoration: none;
+
+    text-transform: uppercase;
+
+    background-color: white;
+    color: black;
+
+
+    padding: 1rem;
+
+    font-size: 1.4rem;
+
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+/*---------------- DATOS DEL MUNDIAL------------*/
+.contenido__menu {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: stretch;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: initial;
+    margin: 16px;
+}
+
+
+
+.contenido__menu article :hover {
+    background-color: gray;
+    list-style-type: none;
+}
+
+/*-----------CONTENIDO ARTICLE----------*/
+.contenido__menu article {
+    border: 2px solid white;
+    text-align: center;
+}
+
+.contenido__menu a {
+    color: white;
+}
+
+/*-------------CONTENIDO DATOS DE LOS EQUIPOS-----------*/
+.contenido__datosequipos {
+    color: white;
+
+
+}
+
+.contenido__datosequipos img {
+    width: 300px;
+
+}
+
+/*-------------- CONTENIDO PARTIDOS EN VIVO----------*/
+.contenido__partidosenvivo {
+    color: white;
+}
+
+.contenido__partidosenvivo img {
+    width: 300px;
+
+
+}
+
+/*------------------CONTENIDO FIXTURE----------*/
+.contenido__fixture {
+    color: white;
+}
+
+.contenido__fixture img {
+    width: 300px;
+}
+
+
+
+/*--------CLASIFICADOS------*/
+
+.clasificados {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 16px;
+    grid-gap: 15px;
+
+}
+
+.clasificados__border {
+
+    border: solid 0.5px white;
+    color: white;
+    padding: 2rem;
+
+}
+
+.clasificados__border h2 {
+    border: 1px solid white;
+    text-align: center;
+
+}
+
+.clasificados__equipos {
+    text-align: center;
+}
+
+/*-----------CONTACTO---------*/
+.formulario {
+    box-sizing: border-box;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 1.5em;
+
+}
+
+.formulario__contenido {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+
+}
+
+.formulario__contenido h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+.formulario__contacto {
+    box-shadow: 0 0 20px 0 black;
+}
+
+.formulario__contacto>* {
+    padding: 1em;
+}
+
+.formulario__contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.formulario__comentario,
+.formulario__enviar {
+    grid-column: 1 / 3;
+}
+
+
+.formulario__contacto p {
+    margin: 0;
+    padding: 1em;
+    color: white;
+
+}
+
+.formulario__contacto input,
+.formulario__contacto textarea,
+.formulario__contacto button {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    outline: 0;
+    color: white;
+    background: none;
+    border-bottom: 1px solid brown;
+}
+
+.formulario__contacto button {
+    background-color: black;
+    color: white;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.formulario__enviar :hover,
+.formulario__enviar :focus {
+    background-color: white;
+    color: black;
+}
+
+/*---------------------HISTORIA------------*/
+.historia__titulo {
+    border: 2px solid white;
+    color: white;
+    text-align: center;
+}
+
+.historia__p {
+    border: 2px solid white;
+    color: white;
+
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+}
+
+/*---------PRODUCTOS-----------*/
+
+.productos__titulo {
+    border: 2px solid white;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.productos__pelota {
+    border: 2px solid white;
+    color: white;
+    padding: 1rem;
+}
+
+.productos__camisetas {
+    border: 2px solid white;
+    color: white;
+    padding: 1rem;
+}
+
+.productos__album-figuritas {
+    border: 2px solid white;
+    color: white;
+    padding: 1rem;
+}
+
+/*----------FOOTER--------*/
+.footer {
+    margin: 2rem;
+    padding: 2rem;
+    border: solid white 4px;
+    text-align: center;
+}
+
+.footer__titulo-seccion {
+    border: 1px solid white;
+    color: white;
+}
+
+.footer__redes-sociales i {
+    background-color: white;
+    color: black;
+}
+
+.footer__copy {
+    border: 1px solid white;
+    color: white;
+}
+
+
+
+/*----------------PANTALLA GRANDE------------*/
+@media (min-width: 700px) {
+    .formulario {
+        padding: 0 4rem;
+    }
+
+    .formulario__contacto>* {
+        padding: 2em;
+    }
+
+    .banner {
+        padding: 0 4rem;
+    }
+}
